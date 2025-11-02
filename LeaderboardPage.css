@@ -1,0 +1,196 @@
+.leaderboard-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-header h1 {
+  color: #333333;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  color: #7f8c8d;
+  font-size: 1.2rem;
+}
+
+.leaderboard-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.leaderboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background: #ffffff;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.leaderboard-header h2 {
+  color: #333333;
+  margin: 0;
+}
+
+.filters {
+  display: flex;
+  gap: 15px;
+}
+
+.filter-select {
+  padding: 8px 15px;
+  border: 2px solid #dee2e6;
+  border-radius: 6px;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #333333;
+}
+
+.leaderboard-table {
+  width: 100%;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 80px 1fr 120px 140px 120px;
+  gap: 20px;
+  padding: 20px 30px;
+  background: #333333;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 80px 1fr 120px 140px 120px;
+  gap: 20px;
+  padding: 20px 30px;
+  border-bottom: 1px solid #e9ecef;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.table-row:hover {
+  background-color: #f8f8f8;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.rank-badge {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.company-info h3 {
+  margin: 0 0 5px 0;
+  color: #333333;
+  font-size: 1.1rem;
+}
+
+.sub-scores {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.score-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.violations-badge {
+  background: #dc3545;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.no-violations {
+  color: #666666;
+  font-weight: bold;
+}
+
+.view-details-btn {
+  background: #333333;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.view-details-btn:hover {
+  background: #555555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .leaderboard-page {
+    padding: 15px;
+  }
+  
+  .page-header h1 {
+    font-size: 2rem;
+  }
+  
+  .leaderboard-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .table-header,
+  .table-row {
+    grid-template-columns: 60px 1fr 80px 100px 90px;
+    gap: 10px;
+    padding: 15px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .company-info h3 {
+    font-size: 1rem;
+  }
+  
+  .sub-scores {
+    font-size: 0.8rem;
+  }
+  
+  .score-badge {
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+  }
+  
+  .view-details-btn {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}

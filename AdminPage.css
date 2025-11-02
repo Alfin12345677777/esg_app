@@ -1,0 +1,358 @@
+.admin-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+.admin-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  color: #333333;
+  border-radius: 12px;
+}
+
+.admin-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.admin-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.admin-container {
+  display: grid;
+  gap: 30px;
+}
+
+/* Upload Section */
+.upload-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tab Header */
+.tab-header {
+  display: flex;
+  gap: 0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.tab-button {
+  background: transparent;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #6c757d;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.tab-button:hover {
+  color: #333333;
+  background: #f8f9fa;
+}
+
+.tab-button.active {
+  color: #333333;
+  border-bottom-color: #333333;
+  background: #f8f9fa;
+}
+
+.upload-area {
+  border: 2px dashed #dee2e6;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  transition: all 0.3s ease;
+  background: #f8f9fa;
+}
+
+.upload-area.drag-over {
+  border-color: #333333;
+  background: #f8f8f8;
+}
+
+.upload-content p {
+  margin: 10px 0;
+  color: #6c757d;
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-content button {
+  background: #333333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.upload-content button:hover {
+  background: #555555;
+}
+
+.sample-actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sample-btn {
+  background: #333333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sample-btn:hover {
+  background: #555555;
+}
+
+/* Quick Start Section */
+.quick-start {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.quick-start h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.quick-start p {
+  margin: 0;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/* Data Editor Section */
+.data-editor-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.data-editor-section h2 {
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.json-editor,
+.csv-editor {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  resize: vertical;
+  background: #f8f9fa;
+}
+
+.json-editor:focus,
+.csv-editor:focus {
+  outline: none;
+  border-color: #333333;
+}
+
+.csv-editor {
+  min-height: 300px;
+}
+
+.editor-actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.import-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.import-btn:hover:not(:disabled) {
+  background: #c82333;
+}
+
+.import-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Results Section */
+.results-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.results-section h2 {
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.result-summary {
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.result-summary.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.result-summary.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.result-summary p {
+  margin: 5px 0;
+}
+
+.detailed-results h3 {
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.results-list {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.result-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-bottom: 1px solid #f1f3f4;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-item.success .company {
+  color: #155724;
+}
+
+.result-item.error .company {
+  color: #721c24;
+}
+
+.error-msg {
+  color: #dc3545;
+  font-size: 0.9rem;
+}
+
+/* Instructions Section */
+.instructions-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.instructions-section h2 {
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.instructions h3 {
+  color: #495057;
+  margin: 20px 0 10px 0;
+}
+
+.instructions pre {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 15px;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.instructions ol {
+  margin-left: 20px;
+}
+
+.instructions li {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-page {
+    padding: 15px;
+  }
+
+  .admin-header {
+    padding: 20px;
+  }
+
+  .admin-header h1 {
+    font-size: 2rem;
+  }
+
+  .upload-section,
+  .data-editor-section,
+  .results-section,
+  .instructions-section {
+    padding: 20px;
+  }
+
+  .upload-area {
+    padding: 20px;
+  }
+
+  .json-editor,
+  .csv-editor {
+    font-size: 12px;
+  }
+
+  .tab-button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}

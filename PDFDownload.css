@@ -1,0 +1,247 @@
+/* PDF Download Component Styles */
+
+.pdf-download-section {
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  color: #333333;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.pdf-title h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.pdf-title p {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.pdf-info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.pdf-pages, .pdf-size {
+  background: #f8f8f8;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Features Grid */
+.pdf-features {
+  margin-bottom: 25px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f8f8f8;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.feature-item:hover {
+  background: #e8e8e8;
+  transform: translateY(-1px);
+}
+
+.feature-icon {
+  font-size: 1.2rem;
+  min-width: 20px;
+  text-align: center;
+}
+
+.feature-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Error and Success States */
+.pdf-error, .pdf-success {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.pdf-error {
+  background: rgba(244, 67, 54, 0.2);
+  border: 1px solid rgba(244, 67, 54, 0.3);
+}
+
+.pdf-success {
+  background: rgba(76, 175, 80, 0.2);
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.error-icon, .success-icon {
+  font-size: 1.1rem;
+}
+
+.error-text, .success-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Actions */
+.pdf-actions {
+  text-align: center;
+}
+
+.pdf-download-btn {
+  background: #333333;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  justify-content: center;
+}
+
+.pdf-download-btn:hover:not(:disabled) {
+  background: #555555;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pdf-download-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.download-icon {
+  font-size: 1.2rem;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* PDF Note */
+.pdf-note {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.pdf-note p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  opacity: 0.9;
+  text-align: left;
+}
+
+.pdf-note strong {
+  color: #333333;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pdf-download-section {
+    padding: 20px;
+  }
+
+  .pdf-header {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .pdf-info {
+    justify-content: center;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .feature-item {
+    padding: 8px 12px;
+  }
+
+  .pdf-download-btn {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .pdf-note {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .pdf-title h3 {
+    font-size: 1.2rem;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pdf-download-btn {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+}

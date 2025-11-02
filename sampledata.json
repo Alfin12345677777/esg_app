@@ -1,0 +1,82 @@
+[
+  {
+    "companyName": "Samsung C&T",
+    "overallScore": 85,
+    "e_score": 88,
+    "s_score": 90,
+    "g_score": 80,
+    "sapaViolations": 0
+  },
+  {
+    "companyName": "Hyundai E&C",
+    "overallScore": 78,
+    "e_score": 82,
+    "s_score": 75,
+    "g_score": 79,
+    "sapaViolations": 1
+  },
+  {
+    "companyName": "GS E&C",
+    "overallScore": 81,
+    "e_score": 85,
+    "s_score": 78,
+    "g_score": 83,
+    "sapaViolations": 1
+  },
+  {
+    "companyName": "POSCO E&C",
+    "overallScore": 89,
+    "e_score": 92,
+    "s_score": 87,
+    "g_score": 88,
+    "sapaViolations": 0
+  },
+  {
+    "companyName": "Daewoo E&C",
+    "overallScore": 76,
+    "e_score": 75,
+    "s_score": 80,
+    "g_score": 74,
+    "sapaViolations": 2
+  },
+  {
+    "companyName": "DL E&C",
+    "overallScore": 83,
+    "e_score": 84,
+    "s_score": 88,
+    "g_score": 79,
+    "sapaViolations": 0
+  },
+  {
+    "companyName": "Lotte E&C",
+    "overallScore": 72,
+    "e_score": 70,
+    "s_score": 75,
+    "g_score": 71,
+    "sapaViolations": 3
+  },
+  {
+    "companyName": "SK Ecoplant",
+    "overallScore": 91,
+    "e_score": 94,
+    "s_score": 90,
+    "g_score": 89,
+    "sapaViolations": 0
+  },
+  {
+    "companyName": "HDC Hyundai Development",
+    "overallScore": 68,
+    "e_score": 65,
+    "s_score": 72,
+    "g_score": 69,
+    "sapaViolations": 4
+  },
+  {
+    "companyName": "Hanwha E&C",
+    "overallScore": 79,
+    "e_score": 81,
+    "s_score": 83,
+    "g_score": 75,
+    "sapaViolations": 1
+  }
+]
